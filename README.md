@@ -7,7 +7,7 @@ A simple webpack configuration made for non-SPA solutions at Addition
 * Webpack Dashboard + Notifier
 * Import Globbing for SCSS
 * Default Polyfills
-* Bootstrap (but only with a few features enabled — to optimize performance)
+* Bootstrap 3 (but only with a few features enabled — optimized for performance)
 
 ## Getting Started
 
