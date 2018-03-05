@@ -51,4 +51,4 @@ as described in the [`package.json`](/package.json) `files` field.
 #### Commands
 `yarn stats` — generates a webpack `stats.json` file to help analyze bundles (in a [Visualizer](https://chrisbateman.github.io/webpack-visualizer/) or [Analyzer](http://webpack.github.io/analyse/)).
 
-`yarn test` — runs a project-wide code style check using the [standard]((https://github.com/standard/standard)) package.
+`yarn test` — runs a project-wide code style check using the [standard](https://github.com/standard/standard) package.
