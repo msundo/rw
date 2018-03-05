@@ -20,6 +20,7 @@
     "dependencies": {
         "bootstrap-sass": "^3.3.7",
         "core-js": "^2.5.3",
+        "del-cli": "^1.1.0",
         "nodelist-foreach-polyfill": "^1.2.0",
         "normalize.css": "^7.0.0",
         "object-fit-images": "^3.2.3"

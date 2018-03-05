@@ -1,24 +1,29 @@
 # elementary-webpack-frontend
-A simple webpack configuration made for non-SPA solutions at Addition
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+A simple webpack configuration made for non-SPA solutions at Addition
 
 ## Features
 * ES6 transpilation using [Babel](https://babeljs.io/)
 * Webpack [Dashboard](https://github.com/FormidableLabs/webpack-dashboard) + [Notifier](https://github.com/Turbo87/webpack-notifier)
 * [Import globbing](https://github.com/Aintaer/import-glob-loader) for SCSS
 * [Default Polyfills](https://github.com/zloirock/core-js)
-* [Bootstrap 3](https://getbootstrap.com/) (but only with a [few features enabled](blob/master/src/styles/bootstrap.scss) — optimized for performance)
+* [Bootstrap 3](https://getbootstrap.com/) (but only with a [few features enabled](/blob/master/src/styles/bootstrap.scss) — optimized for performance)
 * [Handlebars](http://handlebarsjs.com/) templating
 
 ## Getting Started
 
+#### Pre-dependencies
+Every command here should be executed in [node](https://nodejs.org/en/) and requires having the [yarn package manager](https://yarnpkg.com/en/) installed globally.
+
+#### Start development
 1. Install dependencies
 ```sh
 yarn install
 ```
 2. Start local webserver
 ```sh
-yarn run dev
+yarn dev
 ```
 That's it! 🙌
 
