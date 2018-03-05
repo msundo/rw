@@ -1,6 +1,8 @@
 import path from "path"
 import Webpack from "webpack"
 import Notifier from "webpack-notifier"
+import CopyWebpackPlugin from 'copy-webpack-plugin'
+import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin'
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import HtmlPlugin from "html-webpack-plugin"
 import Dashboard from "webpack-dashboard/plugin"
@@ -20,11 +22,16 @@ export default {
     devtool: production ? false : "eval-source-map",
     plugins: [
         ...pages.map(page => new HtmlPlugin({ filename: `${page}.html`, template: `src/${page}.hbs` })),
+        new ScriptExtHtmlWebpackPlugin({
+            defer: 'main.js',
+            async: 'polyfills.js'
+        }),
         new Webpack.DefinePlugin({
             "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
             "process.env.VERSION": JSON.stringify(process.env.npm_package_version),
         }),
-        new ExtractTextPlugin({ filename: "main.css" })
+        new ExtractTextPlugin({ filename: "main.css" }),
+        new CopyWebpackPlugin([{ from: './src/robots.txt', to: output }, { from: 'src/assets/images', to: 'assets/images' }])
     ].concat(production
         ? [ // 🚢  production plugins
 
