@@ -1,3 +1,9 @@
+@mixin small-mobile {
+    @media (max-width: $screen-xs) {
+      @content;
+    }
+  }
+
 @mixin mobile {
     @media (min-width: $screen-xs) {
         @content;

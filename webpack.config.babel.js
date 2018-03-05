@@ -34,7 +34,7 @@ export default {
     new CopyWebpackPlugin([{ from: './src/robots.txt', to: output }, { from: 'src/assets/images', to: 'assets/images' }])
   ].concat(production
     ? [ // 🚢  production plugins
-
+      new Webpack.optimize.UglifyJsPlugin({ output: {comments: false} })
     ]
     : [ // 🏗️  development plugins
       new Webpack.HotModuleReplacementPlugin(),
