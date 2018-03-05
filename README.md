@@ -31,7 +31,11 @@ That's it! 🙌
 
 ##  Build
 
-To generate a production build: run the command `yarn build` — it will build the project, minify scripts and stylesheets and [generally optimize](https://webpack.js.org/guides/production/) the solution for production.
+To generate a production build, run the command:
+```sh
+yarn build
+```
+ — this will install the latest dependencies and build the project, minify scripts and stylesheets and [generally optimize](https://webpack.js.org/guides/production/) the solution for production.
 
 The output folder is `./dist`.
 
@@ -40,4 +44,11 @@ The following scripts and stylesheets will be generated:
 * `main.js`
 * `main.css`
 
-as described in the `package.json` files field.
+as described in the [`package.json`](/package.json) `files` field.
+
+---
+### Extras
+#### Commands
+`yarn stats` — generates a webpack `stats.json` file to help analyze bundles (in a [Visualizer](https://chrisbateman.github.io/webpack-visualizer/) or [Analyzer](http://webpack.github.io/analyse/)).
+
+`yarn test` — runs a project-wide code style check using the [standard]((https://github.com/standard/standard)) package.
