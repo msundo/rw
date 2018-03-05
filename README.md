@@ -1,8 +1,7 @@
 # elementary-webpack-frontend
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-<p align="center" style="font-size: 125px">🥡</p>
 
-<p align="center" style="font-size: 20px">A simple webpack configuration made for non-SPA solutions at Addition.</p>
+<p align="center">A simple webpack configuration made for non-SPA solutions at Addition.</p>
 
 ___
 ## Features
