@@ -5,7 +5,7 @@ A simple webpack configuration made for non-SPA solutions at Addition
 
 ## Features
 * ES6 transpilation using [Babel](https://babeljs.io/)
-* Webpack with [Dashboard](https://github.com/FormidableLabs/webpack-dashboard) + [Notifier](https://github.com/Turbo87/webpack-notifier)
+* [Webpack](https://webpack.js.org/) with [Dashboard](https://github.com/FormidableLabs/webpack-dashboard) + [Notifier](https://github.com/Turbo87/webpack-notifier)
 * [Import globbing](https://github.com/Aintaer/import-glob-loader) for SCSS
 * [Polyfills](/src/scripts/polyfills.js) for older browsers — [core-js](https://github.com/zloirock/core-js), [nodelist-foreach](https://github.com/imagitama/nodelist-foreach-polyfill) & [object-fit-images](https://github.com/bfred-it/object-fit-images)
 * [Bootstrap 3](https://getbootstrap.com/) (but only with a [few features enabled](/src/styles/bootstrap.scss) — optimized for performance)
