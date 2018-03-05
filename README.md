@@ -9,6 +9,7 @@ A simple webpack configuration made for non-SPA solutions at Addition
 * [Import globbing](https://github.com/Aintaer/import-glob-loader) for SCSS
 * [Default Polyfills](https://github.com/zloirock/core-js)
 * [Bootstrap 3](https://getbootstrap.com/) (but only with a [few features enabled](/src/styles/bootstrap.scss) — optimized for performance)
+* [Useful SCSS Mixins](/src/styles/mixins.scss)
 * [Handlebars](http://handlebarsjs.com/) templating
 * [StandardJS](https://github.com/standard/standard) code styling
 
