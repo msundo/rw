@@ -1,8 +1,10 @@
 # elementary-webpack-frontend
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+<p align="center" style="font-size: 125px">🥡</p>
 
-A simple webpack configuration made for non-SPA solutions at Addition
+<p align="center" style="font-size: 20px">A simple webpack configuration made for non-SPA solutions at Addition.</p>
 
+___
 ## Features
 * ES6 transpilation using [Babel](https://babeljs.io/)
 * [Webpack](https://webpack.js.org/) with [Dashboard](https://github.com/FormidableLabs/webpack-dashboard) + [Notifier](https://github.com/Turbo87/webpack-notifier)
@@ -45,6 +47,9 @@ The following scripts and stylesheets will be generated:
 * `main.css`
 
 as described in the [`package.json`](/package.json) `files` field.
+
+other assets, such as images, will be output to the `/assets` folder.
+
 
 ---
 ### Extras
