@@ -112,8 +112,8 @@ selectNodeVersion
 # 3. Install npm packages
 if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd "$DEPLOYMENT_TARGET"
-  echo "Running $NPM_CMD install --production"
-  eval $NPM_CMD install --production && del ./dist && cross-env NODE_ENV=production webpack -p --progress --display=errors-only
+  echo "Running $NPM_CMD install"
+  eval $NPM_CMD install && del ./dist && cross-env NODE_ENV=production webpack -p --progress --display=errors-only
   exitWithMessageOnError "npm failed"
   cd - > /dev/null
 fi
