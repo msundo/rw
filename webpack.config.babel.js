@@ -6,6 +6,7 @@ import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import HtmlPlugin from 'html-webpack-plugin'
 import Dashboard from 'webpack-dashboard/plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const production = process.env.NODE_ENV === 'production'
 const output = path.resolve(__dirname, 'dist')
@@ -31,9 +32,10 @@ export default {
       'process.env.VERSION': JSON.stringify(process.env.npm_package_version)
     }),
     new ExtractTextPlugin({ filename: 'main.css' }),
-    new CopyWebpackPlugin([{ from: './src/robots.txt', to: output }, { from: 'src/assets/images', to: 'assets/images' }])
+    new CopyWebpackPlugin([{ from: path.resolve(__dirname, './src/robots.txt'), to: output }, { from: path.resolve(__dirname, 'src/assets/images'), to: 'assets/images' }])
   ].concat(production
     ? [ // 🚢  production plugins
+      new CleanWebpackPlugin([output]),
       new Webpack.optimize.UglifyJsPlugin({ output: {comments: false} })
     ]
     : [ // 🏗️  development plugins
