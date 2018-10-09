@@ -1,12 +1,16 @@
-@import "~/normalize.css";
+// @import "~/normalize.css";
 @import "./bootstrap.scss";
+@import "./variables.scss";
 @import "./mixins.scss";
-// @import 'components/*';
+@import 'components/*';
 
-html {
+html.coop-map-dev {
     height: 100%;
-    font-size: 18px;
-    @include tablet {
-        font-size: 16px;
-    }
+	
+	body {
+		margin: 0;
+		font-family: sans-serif;
+		color: #212121;
+		color: $color-text;
+	}
 }

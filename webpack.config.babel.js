@@ -5,20 +5,19 @@ import CopyWebpackPlugin from 'copy-webpack-plugin'
 import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import HtmlPlugin from 'html-webpack-plugin'
-import Dashboard from 'webpack-dashboard/plugin'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const production = process.env.NODE_ENV === 'production'
 const output = path.resolve(__dirname, 'dist')
 
 /** 📃 .hbs pages filenames without extensions */
-const pages = ['index']
+const pages = ['index', 'board']
 
 export default {
   entry: './src/scripts/index.js',
   output: {
     path: output,
-    filename: 'main.js'
+    filename: 'coop-map-integration.js'
   },
   devtool: production ? false : 'eval-source-map',
   plugins: [
@@ -31,7 +30,7 @@ export default {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       'process.env.VERSION': JSON.stringify(process.env.npm_package_version)
     }),
-    new ExtractTextPlugin({ filename: 'main.css' }),
+    new ExtractTextPlugin({ filename: 'coop-map-integration.css' }),
     new CopyWebpackPlugin([{ from: path.resolve(__dirname, './src/robots.txt'), to: output }, { from: path.resolve(__dirname, 'src/assets/images'), to: 'assets/images' }])
   ].concat(production
     ? [ // 🚢  production plugins
@@ -40,7 +39,6 @@ export default {
     ]
     : [ // 🏗️  development plugins
       new Webpack.HotModuleReplacementPlugin(),
-      new Dashboard(),
       new Notifier()
     ]),
   module: {
@@ -84,7 +82,7 @@ export default {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: '/images/'
+            outputPath: 'assets/images/'
           }
         }]
       },

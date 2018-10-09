@@ -1,0 +1,13 @@
+{
+	"council": {
+		"heading": "LANDSRÅDSMEDLEMMER",
+		"subheading": "Her kan du finde dit lokale landsrådsmedlem ved at klikke på numrene og Coop-logoerne.<br>Tip: Zoom ved at dobbeltklikke på kortet eller ved brug af musens hjul."
+	},
+	"board": {
+		"heading": "FIND COOPS LOKALE MEDLEMSVALGTE",
+		"subheading": "Her kan du finde din lokale bestyrelsesformands navn, telefonnummer og e-mailadresse.<br>Klik på numrene og Coop-logoerne. Zoom ved at dobbeltklikke på kortet eller bruge musens hjul.",
+		"buttonPostalCodeSearch": "Søg efter postnummer",
+		"placeholder": "Postnummer",
+		"reset": "Nulstil"
+	}
+}

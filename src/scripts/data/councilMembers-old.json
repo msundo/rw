@@ -1,0 +1,348 @@
+
+
+[
+	{
+		"address": {
+			"floor": "1",
+			"houseLetter": "",
+			"houseNumber": "31",
+			"placeName": "Superbrugsen Nrd. Frihavnsgade",
+			"placement": "placement",
+			"postalCodeNumber": "4500",
+			"postalCodeText": "postalCodeText",
+			"streetName": "Algade",
+			"latitude": "55.9228813",
+			"longitude": "11.670158000000015"
+		},
+		"boardMemberships": [{
+			"boardFunction": "Formand",
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "name",
+				"storeType": "storeType: Standard"
+			}
+		}],
+		"contactDetails": {
+			"emailAddress": "kurtmoensted@nyka.dk",
+			"mobilePhoneNumber": "24222795",
+			"phoneNumber": "11 22 33 44"
+		},
+		"district": {
+			"identificationNumber": "3",
+			"name": "Distrikt Fyn",
+			"storeType": "storeType: Standard"
+		},
+		"mainStoreKardex": "mainStoreKardex",
+		"memberDetails": {
+			"birthday": "birthday",
+			"firstNames": "Kurt Fyn",
+			"gender": "gender: N",
+	        "lastName": "Jensen",
+			"number": 0,
+			"image": "./assets/images/council_member_703.jpg"
+		},
+		"memberships": [{
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Super Brugsen",
+				"storeType": "storeType: Standard"
+			},
+			"relationType": "relationType"
+		}]
+	},
+	{
+		"address": {
+			"floor": "",
+			"houseLetter": "",
+			"houseNumber": "007",
+			"placeName": "Stevns Klint Trampesti",
+			"placement": "placement",
+			"postalCodeNumber": "4673",
+			"postalCodeText": "postalCodeText",
+			"streetName": "Stevns Klint Trampesti",
+			"latitude": "55.258327",
+			"longitude": "12.401790"
+		},
+		"boardMemberships": [{
+			"boardFunction": "Bagmand",
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "name",
+				"storeType": "storeType: Standard"
+			}
+		}],
+		"contactDetails": {
+			"emailAddress": "kurtmoensted@nyka.dk",
+			"mobilePhoneNumber": "24222795",
+			"phoneNumber": "11 22 33 44"
+		},
+		"district": {
+			"identificationNumber": "11",
+			"name": "Distrikt Sydsjælland",
+			"storeType": "storeType: Standard"
+		},
+		"mainStoreKardex": "mainStoreKardex",
+		"memberDetails": {
+			"birthday": "birthday",
+			"firstNames": "Kurt Sydsjælland",
+			"gender": "gender: N",
+	        "lastName": "Jensen",
+			"number": 0,
+			"image": "http://fillmurray.com/240/280"
+		},
+		"memberships": [{
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Super Brugsen",
+				"storeType": "storeType: Standard"
+			},
+			"relationType": "relationType"
+		}]
+	},
+	{
+		"address": {
+			"floor": "1",
+			"houseLetter": "",
+			"houseNumber": "222",
+			"placeName": "Superbrugsen Københavnergade",
+			"placement": "placement",
+			"postalCodeNumber": "4500",
+			"postalCodeText": "postalCodeText",
+			"streetName": "Algade",
+			"latitude": "55.9224413",
+			"longitude": "11.670198000000015"
+		},
+		"boardMemberships": [{
+			"boardFunction": "Formand",
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "name",
+				"storeType": "storeType: Standard"
+			}
+		}],
+		"contactDetails": {
+			"emailAddress": "kurtmoensted@nyka.dk",
+			"mobilePhoneNumber": "24222795",
+			"phoneNumber": "11 22 33 44"
+		},
+		"district": {
+			"identificationNumber": "10",
+			"name": "Distrikt København",
+			"storeType": "storeType: Standard"
+		},
+		"mainStoreKardex": "mainStoreKardex",
+		"memberDetails": {
+			"birthday": "birthday",
+			"firstNames": "Kalle København",
+			"gender": "gender: N",
+	        "lastName": "Havnesen",
+			"number": 0,
+			"image": "http://fillmurray.com/240/280"
+		},
+		"memberships": [{
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Super Brugsen",
+				"storeType": "storeType: Standard"
+			},
+			"relationType": "relationType"
+		}]
+	},
+	{
+		"address": {
+			"floor": "floor",
+			"houseLetter": "houseLetter",
+			"houseNumber": "11",
+			"placeName": "placeName",
+			"placement": "placement",
+			"postalCodeNumber": "8592",
+			"postalCodeText": "postalCodeText",
+			"streetName": "Bygaden",
+			"latitude": "56.702636",
+			"longitude": "11.5416533"
+		},
+		"boardMemberships": [{
+			"boardFunction": "Formand",
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Irma",
+				"storeType": "storeType: Standard"
+			}
+		}],
+		"contactDetails": {
+			"emailAddress": "emailAddress@email.dk",
+			"mobilePhoneNumber": "12345678",
+			"phoneNumber": "12345678"
+		},
+		"district": {
+			"identificationNumber": "4",
+			"name": "Distrikt Fyn",
+			"storeType": "storeType: Standard"
+		},
+		"mainStoreKardex": "mainStoreKardex",
+		"memberDetails": {
+			"birthday": "birthday",
+			"firstNames": "Frank Fyn",
+			"gender": "gender: N",
+			"lastName": "Svensson",
+			"number": 0,
+			"image": "http://fillmurray.com/120/140"
+
+		},
+		"memberships": [{
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Fakta",
+				"storeType": "storeType: Standard"
+			},
+			"relationType": "relationType"
+		}]
+	},
+	{
+		"address": {
+			"floor": "4",
+			"houseLetter": "1",
+			"houseNumber": "213",
+			"placeName": "placeName",
+			"placement": "placement",
+			"postalCodeNumber": "2100",
+			"postalCodeText": "postalCodeText",
+			"streetName": "Jagtvej",
+			"latitude": "55.6882148",
+			"longitude": "12.5393669"
+		},
+		"boardMemberships": [{
+			"boardFunction": "Formand",
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "name",
+				"storeType": "storeType: Standard"
+			}
+		}],
+		"contactDetails": {
+			"emailAddress": "emailAddress@email.dk",
+			"mobilePhoneNumber": "12345678",
+			"phoneNumber": "12345678"
+		},
+		"district": {
+			"identificationNumber": "2",
+			"name": "Distrikt Nordsjælland",
+			"storeType": "storeType: Standard"
+		},
+		"mainStoreKardex": "mainStoreKardex",
+		"memberDetails": {
+			"birthday": "birthday",
+			"firstNames": "Frank Nordsjælland",
+			"gender": "gender: N",
+			"lastName": "Svensson",
+			"number": 0,
+			"image": "http://fillmurray.com/120/140"
+		},
+		"memberships": [{
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Kvickly",
+				"storeType": "storeType: Standard"
+			},
+			"relationType": "relationType"
+		}]
+	},
+	{
+		"address": {
+			"floor": "",
+			"houseLetter": "A",
+			"houseNumber": "1",
+			"placeName": "placeName",
+			"placement": "placement",
+			"postalCodeNumber": "2791",
+			"postalCodeText": "postalCodeText",
+			"streetName": "Kongelunden",
+			"latitude": "55.574931",
+			"longitude": "12.5772167"
+		},
+		"boardMemberships": [{
+			"boardFunction": "Formand",
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "name",
+				"storeType": "storeType: Standard"
+			}
+		}],
+		"contactDetails": {
+			"emailAddress": "emailAddress@email.dk",
+			"mobilePhoneNumber": "12345678",
+			"phoneNumber": "12345678"
+		},
+		"district": {
+			"identificationNumber": "2",
+			"name": "Distrikt Nordsjælland",
+			"storeType": "storeType: Standard"
+		},
+		"mainStoreKardex": "mainStoreKardex",
+		"memberDetails": {
+			"birthday": "birthday",
+			"firstNames": "Freddy Medarbejder",
+			"gender": "gender: N",
+			"lastName": "Fredsson",
+			"number": 0,
+			"image": "./assets/images/council_member_703.jpg"
+		},
+		"memberships": [{
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Irma",
+				"storeType": "storeType: Standard"
+			},
+			"relationType": "relationType"
+		}]
+	},
+	{
+		"address": {
+			"floor": "",
+			"houseLetter": "A",
+			"houseNumber": "1",
+			"placeName": "placeName",
+			"placement": "placement",
+			"postalCodeNumber": "2791",
+			"postalCodeText": "postalCodeText",
+			"streetName": "Kongelunden",
+			"latitude": "55.58000",
+			"longitude": "12.5780004"
+		},
+		"boardMemberships": [{
+			"boardFunction": "Formand",
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "name",
+				"storeType": "storeType: Standard"
+			}
+		}],
+		"contactDetails": {
+			"emailAddress": "emailAddress@email.dk",
+			"mobilePhoneNumber": "12345678",
+			"phoneNumber": "12345678"
+		},
+		"district": {
+			"identificationNumber": "2",
+			"name": "Distrikt Nordsjælland",
+			"storeType": "storeType: Standard"
+		},
+		"mainStoreKardex": "mainStoreKardex",
+		"memberDetails": {
+			"birthday": "birthday",
+			"firstNames": "Freddy Medarbejder",
+			"gender": "gender: N",
+			"lastName": "Fredsson",
+			"number": 0,
+			"image": "./assets/images/council_member_703.jpg"
+		},
+		"memberships": [{
+			"organization": {
+				"identificationNumber": "identificationNumber",
+				"name": "Irma",
+				"storeType": "storeType: Standard"
+			},
+			"relationType": "relationType"
+		}]
+	}
+]

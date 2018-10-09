@@ -1,0 +1,45 @@
+#map-c8vhal22 {
+
+	.filter {
+		display: flex;
+		flex-grow: 0;
+		background: $color2;
+		color: $color5;
+		padding: 10px 20px 15px;
+		flex-wrap: wrap;
+		border-top: 1px solid $color3;
+	
+		&__item {
+			padding: 3px 5px;
+			transition: transform 200ms cubic-bezier(0, 0.56, 0.58, 1), color 200ms cubic-bezier(0, 0.56, 0.58, 1),  opacity 200ms cubic-bezier(0, 0.56, 0.58, 1);
+			opacity: 0.9;
+			flex-basis: 100%;
+			
+			@include tablet {
+				flex-basis: calc(33.3333% - 10px);
+			}
+	
+			&:hover {
+				cursor: pointer;
+				opacity: 1;
+			}
+
+			&.is-active {
+				color: $color1;
+				opacity: 1;
+			}
+		}
+	
+	}
+	.coop-map--column-layout .filter {
+		flex-direction: column;
+		flex-flow: column;
+		justify-items: flex-start;
+	
+		&__item {
+			padding: 0;
+			margin-bottom: 5px;
+			flex-basis: initial;
+		}
+	}
+}
