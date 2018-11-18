@@ -11,7 +11,7 @@ const production = process.env.NODE_ENV === 'production'
 const output = path.resolve(__dirname, 'dist')
 
 /** 📃 .hbs pages filenames without extensions */
-const pages = ['index', 'board']
+const pages = ['index']
 
 export default {
   entry: './src/scripts/index.js',
