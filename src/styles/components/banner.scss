@@ -1,0 +1,17 @@
+.banner {
+	background-image: url('../assets/images/forest.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 260px;
+
+	@include tablet {
+		height: 360px;
+	}
+	
+	@include desktop {
+		height: 460px;
+		
+	}
+}

@@ -1,9 +1,20 @@
 $color1: #AC252A;
-$color2: #F7F7F7;
+$color2: #DED9CE;
+$color2-dark: #D9D3C5;
 $color3: #28292D;
 $color4: #EF8354;
 $color5: #3F4047;
 $color-text: #333;
+
+
+$primary-color: $color1;
+$dark-color: $color3;
+$light-color: $color2;
+$light-color-darker: $color2-dark;
+
+
+$gutter: 20px;
+$spacing: 80px;
 
 $width-desktop: 950px;
 

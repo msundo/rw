@@ -1,16 +1,21 @@
-// @import "~/normalize.css";
+@import "~/normalize.css";
 @import "./bootstrap.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "./utility.scss";
+@import "./fonts.scss";
 @import 'components/*';
 
-html.coop-map-dev {
-    height: 100%;
-	
-	body {
-		margin: 0;
-		font-family: sans-serif;
-		color: #212121;
-		color: $color-text;
-	}
+
+
+body {
+	margin: 0;
+	color: $color-text;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	background-color: $light-color;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Arima Madurai', cursive;
 }
