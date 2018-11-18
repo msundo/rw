@@ -2,7 +2,7 @@
     "name": "coop-map",
     "version": "1.0.0",
     "main": "dist",
-    "author": "Addition",
+    "author": "Michael Sundø",
     "private": true,
     "standard": true,
     "license": "UNLICENSED",

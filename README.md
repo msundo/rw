@@ -1,8 +1,6 @@
 # elementary-webpack-frontend
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-<p align="center">A simple webpack configuration made for non-SPA solutions at Addition.</p>
-
 ## Features
 * ES6 transpilation using [Babel](https://babeljs.io/)
 * [Webpack](https://webpack.js.org/) with [Dashboard](https://github.com/FormidableLabs/webpack-dashboard) + [Notifier](https://github.com/Turbo87/webpack-notifier)
