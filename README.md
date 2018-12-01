@@ -27,8 +27,14 @@ yarn dev
 ```
 That's it! 🙌
 
-##  Build
+## Sharing localhost
+Run webpack-dev-server with --host 0.0.0.0 — this lets the server listen for requests from the network, not just localhost.
 
+Find your computer's address on the network. In terminal, type ifconfig and look for the en1 section or the one with something like inet 192.168.0.4.
+
+On your second device on the same network, visit http://192.168.0.4:8080/ and enjoy hot reloading dev bliss.
+
+## Build
 To generate a production build, run the command:
 ```sh
 yarn build

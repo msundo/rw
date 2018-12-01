@@ -1,0 +1,19 @@
+.highlight {
+	font-family: $font-heading;
+	font-weight: 200;
+	line-height: 1.45;
+	text-align: center;
+	color: $color-text--light;
+	padding: 20px;
+	font-size: 18px;
+	
+	@include mobile {
+		font-size: 20px;
+		padding: 20px 40px;
+	}
+
+	@include tablet {
+		font-size: 24px;
+		padding: 40px 60px;
+	}
+}

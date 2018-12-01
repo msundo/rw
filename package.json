@@ -1,5 +1,5 @@
 {
-    "name": "coop-map",
+    "name": "RunaWilhelmina",
     "version": "1.0.0",
     "main": "dist",
     "author": "Michael Sundø",
@@ -29,6 +29,7 @@
         "nodelist-foreach-polyfill": "^1.2.0",
         "normalize.css": "^7.0.0",
         "object-fit-images": "^3.2.3",
+        "smoothscroll": "^0.4.0",
         "snazzy-info-window": "^1.1.1"
     },
     "devDependencies": {

@@ -1,0 +1,32 @@
+.btn {
+	padding: 8px 16px;
+	background: transparent;
+	border: 2px solid $primary-color;
+	color: $color-text;
+	color: $primary-color;
+	border-radius: 4px;
+	transition: all 160ms ease-in-out;
+	display: inline-block;	
+	font-size: 20px;
+	
+	&:hover {
+		background: $primary-color;
+		color: $light-color;
+		cursor: pointer;
+	}
+
+	&:focus,
+	&:active {
+		outline: none;
+	}
+
+	&--contact {
+		color: $light-color;
+		border-color: $light-color;
+
+		&:hover {
+			background-color: $light-color;
+			color: $primary-color;
+		}
+	}
+}

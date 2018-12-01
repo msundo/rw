@@ -8,16 +8,16 @@ import HtmlPlugin from 'html-webpack-plugin'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const production = process.env.NODE_ENV === 'production'
-const output = path.resolve(__dirname, 'dist')
+const output = path.resolve(__dirname, 'public')
 
 /** 📃 .hbs pages filenames without extensions */
-const pages = ['index']
+const pages = ['index', 'english', 'your-zone']
 
 export default {
   entry: './src/scripts/index.js',
   output: {
     path: output,
-    filename: 'coop-map-integration.js'
+    filename: 'main.js'
   },
   devtool: production ? false : 'eval-source-map',
   plugins: [
@@ -30,7 +30,7 @@ export default {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       'process.env.VERSION': JSON.stringify(process.env.npm_package_version)
     }),
-    new ExtractTextPlugin({ filename: 'coop-map-integration.css' }),
+    new ExtractTextPlugin({ filename: 'main.css' }),
     new CopyWebpackPlugin([{ from: path.resolve(__dirname, './src/robots.txt'), to: output }, { from: path.resolve(__dirname, 'src/assets/images'), to: 'assets/images' }])
   ].concat(production
     ? [ // 🚢  production plugins

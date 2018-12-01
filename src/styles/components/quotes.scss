@@ -1,0 +1,118 @@
+.quotes {
+	$quote-background: #fdfdfc;
+	// $quote-background: hsla(48, 24%, 91%, 1);
+	
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@include tablet {
+			flex-direction: row;
+		}
+	}
+
+	ul {
+		margin-left: -1em;
+		list-style-type: circle;
+		
+		li {
+			margin-bottom: 1em;
+	
+		}
+		&.no-margin {
+			li {
+				margin-bottom: initial;
+			}
+		}
+	}
+	
+
+	&__item {
+		position: relative;
+		overflow: hidden;
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 40px;
+		background: $quote-background;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+		transition: box-shadow 130ms ease-in;
+		width: 100%;
+		padding: 0 20px;
+
+		@include mobile {
+			padding: 10px 30px;
+		}
+		
+		@include tablet {
+			padding: 20px 40px;
+			
+		}
+		
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+
+			& > .quotes__toggle {
+				background-position: center 25px;
+			}
+		}		
+		
+		&:after {
+			content: "";
+			display: none;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: linear-gradient(rgba(238, 235, 227, 0) 0%, $quote-background calc(100% - 50px));
+			height: 120px;
+			z-index: 1;
+		}
+
+		&.is-expandable {
+			height: 340px;
+
+			&:after {
+				display: block;
+			}
+		}
+		&.is-open {
+			width: 100%;
+			height: auto;
+			padding-bottom: 40px;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&__toggle {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		left: 50%;
+		z-index: 2;
+		transform: translateX(-50%) rotate(0deg);
+		background-image: url('../assets/images/chevron.svg');
+		background-size: 30px;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 50px;
+		transition: all 340ms 140ms cubic-bezier(0.65, 0.05, 0.36, 1);
+		opacity: 0.75;
+		display: none;
+
+		.is-expandable & {
+			display: block;
+		}
+
+		.is-open & {
+			transform: translateX(-50%) rotate(180deg);
+		}
+	}
+}

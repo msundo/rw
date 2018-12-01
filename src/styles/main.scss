@@ -1,21 +1,75 @@
-@import "~/normalize.css";
+// @import "~/normalize.css";
 @import "./bootstrap.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "./utility.scss";
+@import "./layout.scss";
 @import "./fonts.scss";
 @import 'components/*';
 
-
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 body {
 	margin: 0;
 	color: $color-text;
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-family: $font-text;
+	line-height: 1.55;
 	background-color: $light-color;
+	font-size: $fs-small;
+	
+	
+	@include tablet {
+		font-size: $fs-base;
+	}
+}
+
+p {
+	margin: $gutter 0;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Arima Madurai', cursive;
+	font-family: $font-heading;
+}
+
+h1 {
+	font-size: $fs-huge;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 24px;
+	
+	@include tablet {
+		margin-bottom: 40px;
+		font-size: $fs-large;
+	}
+	@include desktop {
+		font-size: $fs-big;
+	}
+}
+
+h3 {
+	font-size: $fs-large;
+}
+
+h4 {
+	font-size: $fs-base;
+}
+
+a {
+	color: $primary-color;
+
+	&:focus,
+	&:visited {
+		color: $primary-color;
+	}
+
+	&:active {
+		color: rgba($primary-color, 0.8);
+	}
 }

@@ -1,0 +1,22 @@
+section {
+	padding: 40px 0;
+	background: rgb(239,237,232);
+	background: linear-gradient(0deg, hsl(43, 17%, 92%) 0%, hsl(48, 24%, 96%) 100%);
+	border-bottom: 1px solid hsla(48, 14%, 36%, 0.25);
+
+	&:last-of-type {
+		border: none;
+	}
+
+	@include mobile {
+		padding: 80px 0;
+		
+	}
+	@include tablet {
+		padding: 100px 0;
+	}
+
+	@include desktop {
+		padding: 120px 0;
+	}
+}

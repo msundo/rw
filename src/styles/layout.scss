@@ -1,0 +1,23 @@
+.container {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 20px;
+
+	@include mobile {
+	}
+
+	@include tablet {
+		max-width: $container-width;
+	}
+
+	&--contact {
+		width: 100%;
+		
+		@include tablet {
+			max-width: 600px;
+		}
+	}
+	&--large {
+		max-width: 1200px;
+	}
+}

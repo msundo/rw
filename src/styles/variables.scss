@@ -1,10 +1,11 @@
-$color1: #AC252A;
-$color2: #DED9CE;
+$color1: #297373;
+$color2: #F7F6F2;
 $color2-dark: #D9D3C5;
 $color3: #28292D;
 $color4: #EF8354;
 $color5: #3F4047;
 $color-text: #333;
+$color-text--light: #424238;
 
 
 $primary-color: $color1;
@@ -14,11 +15,32 @@ $light-color-darker: $color2-dark;
 
 
 $gutter: 20px;
+$gutter-large: $gutter * 2;
+
 $spacing: 80px;
 
 $width-desktop: 950px;
+
+$fs-huge: 54px;
+$fs-big: 44px;
+$fs-large: 24px;
+$fs-base: 18px;
+$fs-small: 16px;
+
+
+$font-text: 'Raleway', sans-serif;
+$font-heading: 'Arima Madurai', serif;
 
 // $color2: #363636;
 // $color3: #272D2D;
 // $color4: #89909F;
 // $color5: #BAC4BC;
+
+
+$screen-xs:		480px !default;
+$screen-sm: 	768px !default;
+$screen-md: 	992px !default;
+$screen-lg: 	1200px !default;
+
+$container-width: 800px;
+$shadow-subtle: 0 1px 0px 2px rgba(0, 0, 0, 0.075);

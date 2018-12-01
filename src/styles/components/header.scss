@@ -1,27 +1,182 @@
 .header {
 	position: fixed;
-	z-index: 10;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	height: 60px;
-	align-items: center;
-	padding: 0 20px;
+	top: 0;
+	z-index: 999;
 	background-color: #F7F7F7;
-	border-top: 2px solid $primary-color ;
-	box-shadow: 0 0 0px 2px rgba(0, 0, 0, 0.075);
-
- 	@include desktop {
-		padding: 0 40px;
+	box-shadow: $shadow-subtle;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	transition: height 200ms ease-in;
+	overflow: hidden;
+	
+	&.is-open {
+		height: 293px;
+		
+		nav {
+			display: flex;
+		}
 	}
 
-	ul {
+	@include desktop {
+		height: 70px;
+		z-index: 10;
+	}
+	
+	&__flex {
 		display: flex;
-		list-style: none;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		@include desktop {
+			height: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			padding-right: 80px;
+		}	
 	}
 
-	li {
-		padding: 0 10px;
+	nav {
+		position: relative;
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		margin-top: 20px;
+		border-top: 1px solid darken($light-color, 12%);
+		
+		.is-open & {
+			display: flex;
+		}
+		
+		@include desktop {
+			display: flex;
+			flex-direction: row;
+			width: auto;
+			margin-top: 0;
+			margin-right: 20px;
+			border: none;
+			justify-self: flex-end;
+		}
+	}
+
+	&__link {
+		font-weight: 500;
 		color: $primary-color;
+		letter-spacing: 0.025em;
+		font-size: 16px;
+		border-bottom: 1px solid darken($light-color, 8%);
+		text-decoration: none;
+		padding: 12px 10px;
+		text-align: center;
+		line-height: 22px;
+		
+		&:last-of-type {
+			border: none;
+		}
+		
+		@include desktop {
+			margin: 0 10px;
+			font-size: 18px;
+			border: none;
+			padding: 0;
+		}
+
+		&:hover {
+			text-decoration: none;
+			opacity: 0.8;
+		}
+
+		&:focus,
+		&:active {
+			text-decoration: none;
+			outline: none;
+		}
+	}
+
+	&__menu-toggler {
+		width: 26px;
+		height: 26px;
+		background-image: url('../assets/images/menu.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		@include desktop {
+			display: none;
+		}
+	}
+
+	&__logo {
+		font-family: $font-heading;
+		line-height: 1;
+		color: $dark-color !important;
+		margin: 15px 0 0 20px;
+		font-size: 22px;
+		text-decoration: none;
+		align-self: flex-start;
+
+		@include desktop {
+			align-self: center;
+			justify-self: flex-start;
+			margin-top: 0;
+			width: auto;
+			font-size: 34px;
+			padding-top: 0;
+		}
+
+		&:hover {
+			text-decoration: none;
+			opacity: 0.8;
+		}
+
+		&:focus,
+		&:active {
+			text-decoration: none;
+			outline: none;
+		}
+	}
+
+	&__underline { 
+		display: none;
+		position: absolute;
+		left: 10px;
+		width: 90px;
+		bottom: -4px;
+		background-color: $primary-color;
+		transition: all 120ms 75ms ease-in-out;
+		height: 2px;
+
+		@include desktop {
+			display: block;
+		}
+	}
+
+	&__language {
+		position: absolute;
+		top: 13px;
+		font-size: 16px;
+		margin-left: 40px;
+		opacity: 0.75;
+		right: 80px;
+		text-decoration: none;
+		color: $color-text !important;
+		transition: color 150ms ease-in;
+
+		@include desktop {
+			right: 20px;
+			top: 23px;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
